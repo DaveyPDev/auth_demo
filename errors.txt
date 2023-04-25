@@ -1,0 +1,39 @@
+<---- currently not getting User.query.all() to work
+
+i previously had it working. 
+
+saw his code was using id which I thought we weren't 
+supposed to use. so I tried changing the names to like
+tweet_id and user_id. 
+
+before I tried to do that. the code worked until 
+about the four minute mark in the video ---->
+
+^^^^ i think I got this part working again.
+
+I apologize. I started this file with one issue and seemed
+to work through one back into the orginal issue.
+
+i was able to assgin t = Tweet(text='First tweet', user_id=3)
+and i want to say I had 
+t.text and t.user to work but not t.id. looks like in the video 
+he gets id to work
+
+In [11]: t
+Out[11]: <Tweet (transient 4525067984)>
+
+In [12]: t.text
+Out[12]: 'first tweet'
+
+In [13]: t.id
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+<ipython-input-13-9e2f7f2245ec> in <module>
+----> 1 t.id
+
+AttributeError: 'Tweet' object has no attribute 'id'
+
+In [14]: t.tweet_id
+
+In [15]: t.user_id
+Out[15]: 3
