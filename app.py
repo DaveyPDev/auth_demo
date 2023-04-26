@@ -32,7 +32,7 @@ def show_tweets():
     all_tweets = Tweet.query.all()
     if form.validate_on_submit():
         text = form.text.data
-        new_tweet = Tweet(text=text, user_id=session['user.id'])
+        new_tweet = Tweet(text=text, user_id=session['user_id'])
         db.session.add(new_tweet)
         db.session.commit()
         flash('Tweet Created')
