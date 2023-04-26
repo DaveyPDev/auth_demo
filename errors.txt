@@ -3,22 +3,25 @@ i was able to assgin t = Tweet(text='First tweet', user_id=3)
 and i want to say I had 
 t.text and t.user to work but not t.id. looks like in the video 
 he gets id to work
+In [3]: t = Tweet(text='first tweet', user_id=3)
 
-In [11]: t
-Out[11]: <Tweet (transient 4525067984)>
+In [4]: t
+Out[4]: <Tweet (transient 4560735696)>
 
-In [12]: t.text
-Out[12]: 'first tweet'
+In [5]: t.tweet_id
 
-In [13]: t.id
+In [6]: t.text
+Out[6]: 'first tweet'
+
+In [7]: t.user_id
+Out[7]: 3
+
+In [8]: t.user
+
+In [9]: t.id
 ---------------------------------------------------------------------------
 AttributeError                            Traceback (most recent call last)
-<ipython-input-13-9e2f7f2245ec> in <module>
+<ipython-input-9-9e2f7f2245ec> in <module>
 ----> 1 t.id
 
 AttributeError: 'Tweet' object has no attribute 'id'
-
-In [14]: t.tweet_id
-
-In [15]: t.user_id
-Out[15]: 3
