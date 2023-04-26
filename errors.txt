@@ -1,18 +1,3 @@
-<---- currently not getting User.query.all() to work
-
-i previously had it working. 
-
-saw his code was using id which I thought we weren't 
-supposed to use. so I tried changing the names to like
-tweet_id and user_id. 
-
-before I tried to do that. the code worked until 
-about the four minute mark in the video ---->
-
-^^^^ i think I got this part working again.
-
-I apologize. I started this file with one issue and seemed
-to work through one back into the orginal issue.
 
 i was able to assgin t = Tweet(text='First tweet', user_id=3)
 and i want to say I had 
